@@ -1,5 +1,5 @@
 # Get the network adapter name
-$adapterName = "Wi-Fi 2"
+$adapterName = "Wi-Fi"
 
 # Disable the network adapter
 Write-Host "Disabling $adapterName ..."
@@ -11,6 +11,6 @@ Disable-NetAdapter -Name $adapterName -Confirm:$false
 
 # Enable the network adapter
 Write-Host "Enabling $adapterName ..."
-Enable-NetAdapter -Name "Wi-Fi 2" -Confirm:$false
+Enable-NetAdapter -Name $adapterName -Confirm:$false
 
 Write-Host "Done!"
